@@ -1,0 +1,26 @@
+{
+  "watchForFileChanges": false,
+  "viewportWidth": 1280,
+  "viewportHeight": 800,
+  "video": false,
+  "chromeWebSecurity": false,
+  "defaultCommandTimeout": 30000,
+  "requestTimeout": 15000,
+  "apiVersion": "v1",
+  "api": "http://api-qa.myapp.test",
+  "baseUrl": "http://ui-qa.myapp.test",
+  "env": {
+    "FAIL_FAST_STRATEGY": "spec",
+    "environment": "development",
+    "loginUrl": "http://api-qa.myapp.test/v1/login"
+  },
+  "reporter": "cypress-mochawesome-reporter",
+  "reporterOptions": {
+    "reportDir": "cypress/reports",
+    "charts": true,
+    "reportPageTitle": "QA - Test Reports",
+    "embeddedScreenshots": true,
+    "inlineAssets": true
+  },
+  "screenshotsFolder": "cypress/reports/screenshots"
+}

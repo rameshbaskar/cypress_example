@@ -1,0 +1,16 @@
+node_modules
+.DS_Store
+.env
+
+cypress/videos
+cypress/screenshots
+cypress/downloads
+cypress/report*
+cypress/fixtures/features.json
+mochawesome-report
+
+.idea
+*.iml
+.vscode
+
+.eslintcache

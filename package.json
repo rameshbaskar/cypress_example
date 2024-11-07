@@ -1,0 +1,37 @@
+{
+  "name": "cypress_example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "cy:dev": "cypress open --env configFile=dev",
+    "cy:qa": "cypress open --env configFile=qa",
+    "eslint": "eslint .",
+    "prettier": "prettier --write \"./{,**/}*.{js,ts}{,x}\"",
+    "prettier:check": "prettier --check \"./{,**/}*.{js,ts}{,x}\"",
+    "lint": "yarn prettier && yarn prettier:check && yarn eslint"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.14.0",
+    "@ngneat/falso": "7.2.0",
+    "axios": "1.6.8",
+    "bcrypt": "5.1.1",
+    "cypress": "13.15.2",
+    "cypress-fail-fast": "7.1.1",
+    "cypress-mochawesome-reporter": "3.8.2",
+    "dayjs": "1.11.13",
+    "dotenv": "16.4.5",
+    "eslint": "9.14.0",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-plugin-cypress": "3.4.0",
+    "fs-extra": "11.2.0",
+    "globals": "15.12.0",
+    "mocha": "10.7.3",
+    "mochawesome": "7.1.3",
+    "mochawesome-merge": "4.3.0",
+    "mochawesome-report-generator": "6.2.0",
+    "pg": "8.13.1",
+    "prettier": "3.3.3",
+    "uuid": "11.0.2"
+  }
+}
