@@ -1,6 +1,7 @@
 import {hashPassword} from 'support/utils';
 
 Cypress.Commands.add('login', (username, password) => {
+  cy.log(`Create logged in session`);
   cy.session(username, () => {
     cy.visitHome();
     cy.request({
@@ -15,4 +16,9 @@ Cypress.Commands.add('login', (username, password) => {
       cy.setCookie('authToken', response.authToken);
     });
   });
+});
+
+Cypress.Commands.add('visitHome', () => {
+  cy.log(`Navigate to home page`);
+  cy.visit('');
 });
