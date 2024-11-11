@@ -8,9 +8,12 @@ export default [
   pluginJs.configs.recommended,
   pluginCypress.configs.recommended,
   {
+    rules: {
+      'cypress/unsafe-to-chain-command': 'off',
+    },
     ignores: [
       './node_modules',
       './.DS_Store',
-    ]
-  }
+    ],
+  },
 ];
